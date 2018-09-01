@@ -5,7 +5,7 @@ const app = express();
 
 app.post('/sms',(req,res) => {
   const twiml = new MessagingResponse();
-  twiml.message('Automated response from Twilio');
+  twiml.message('NSBE Chat Bot is Currently Down');
   
   res.writeHead(200,{'Content-Type':'text/xml'});
   res.end(twiml.toString());
