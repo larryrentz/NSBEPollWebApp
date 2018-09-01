@@ -5,7 +5,7 @@ const app = express();
 
 app.post('/sms',(req,res) => {
   const twiml = new MessagingResponse();
-  twiml.message('INSERT RESPONSE FROM API.AI');
+  twiml.message('Automated response from Twilio');
   
   res.writeHead(200,{'Content-Type':'text/xml'});
   res.end(twiml.toString());
